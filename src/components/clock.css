@@ -1,0 +1,21 @@
+.clock-container {
+    font-family: 'Bitter', serif;
+    position: fixed;
+    top: 4vh;
+    right: 4vh;
+    font-size: 13vh;
+    line-height: 20vh;
+    height: 20vh;
+    width: 25vh;
+    text-align: center;
+    color: white;
+    border-radius: 2vh;
+    background: rgba(80, 80, 80, .9);
+    z-index: 10;
+    text-shadow:
+		-2px -2px 0 #333,
+		2px -2px 0 #333,
+		-2px 2px 0 #333,
+        2px 2px 0 #333;
+    font-style: normal;
+}
