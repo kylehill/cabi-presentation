@@ -36,10 +36,12 @@ const Slide = (props) => {
                 <small>[404 usage not found]</small>
             </Stage>
             <Stage preload={true} on={8}>
-                <img src="Tourmalet.png" />
+                <img src="Tourmalet.png" 
+                    alt="A diagram showing elevation change on a mountain" />
             </Stage>
             <Stage preload={true} on={9}>
-                <img src="601px-Elmer's_Glue-All_historic_packaging.jpeg" />
+                <img src="601px-Elmer's_Glue-All_historic_packaging.jpeg" 
+                    alt="A bottle of glue often used in arts and crafts" />
             </Stage>
             <Stage from={10}>
                 <em>20,000</em> trips/day

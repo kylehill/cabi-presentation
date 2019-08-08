@@ -1,7 +1,6 @@
 import { createStore } from "redux"
 import actions from "./actions"
 
-
 const newState = (() => actions.RESET_STATE())
 
 const reducerFn = (state = newState(), action) => {

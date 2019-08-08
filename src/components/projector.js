@@ -40,7 +40,6 @@ class Projector extends React.Component {
     }
 
     keyListener(event) {
-        console.log(event.keyCode)
         switch (event.keyCode) {
             case 37:
                 this.props.keyLeft()

@@ -1,5 +1,4 @@
 import React from "react"
-import Stage from "../stage"
 
 const Slide = (props) => {
     return (
@@ -10,7 +9,5 @@ const Slide = (props) => {
         </div>
     )
 }
-
-Slide.stages = 1
 
 export default Slide

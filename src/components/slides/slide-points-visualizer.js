@@ -2,8 +2,6 @@ import React from "react"
 import { connect } from "react-redux"
 import Map from "../map"
 
-import meta from "../../data/meta"
-
 const PointsVisualizer = (props) => {
     const handleSlide = (event) => {
         props.dispatch({

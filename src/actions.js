@@ -1,5 +1,6 @@
 import asyncActions from "./async-actions"
 import slides from "./components/slides"
+import { async } from "q";
 const SLIDE_COUNT = (slides.length - 1)
 
 export default {
@@ -28,6 +29,8 @@ export default {
                     current: state.slideStage.current - 1
                 })
             })
+
+            asyncActions.checkForAsync(slides[state.slide], newState.slideStage.current)
             return newState
         }
 
@@ -44,6 +47,9 @@ export default {
             },
             slide: newSlideIndex
         })
+
+        asyncActions.checkForAsync(slides[newSlideIndex], 1)
+
         return newState
     },
     
@@ -54,9 +60,11 @@ export default {
                     current: state.slideStage.current + 1
                 })
             })
+
+            asyncActions.checkForAsync(slides[state.slide], newState.slideStage.current)
             return newState
         }
-        
+
         return this.NEXT_SLIDE(state, action)
     },
 
@@ -70,6 +78,9 @@ export default {
             },
             slide: newSlideIndex
         })
+
+        asyncActions.checkForAsync(slides[newSlideIndex], 1)
+
         return newState
     },
 
@@ -135,6 +146,22 @@ export default {
         })
     },
 
+    START_RESULTS_DISPLAY(state, action) {
+        asyncActions.tickResultsDisplay()
+
+        const startTime = Date.now() - ((action.startAt || 0) * action.acceleration)
+
+        return Object.assign({}, state, {
+            slideState: {
+                play: true,
+                timeStart: startTime,
+                minutesElapsed: (action.startAt || 0),
+                stopAt: (action.stopAt || null),
+                acceleration: action.acceleration
+            }
+        })
+    },
+
     UPDATE_CLOCK(state, action) {
         if (state.showClock === false) {
             return state
@@ -145,6 +172,41 @@ export default {
         asyncActions.tickClock()
         return Object.assign({}, state, {
             clockTime: Math.max(0, 60 - elapsed)
+        })
+    },
+
+    UPDATE_TIME_DISPLAY(state, action) {
+        if (state.slideState.play !== true) {
+            return state
+        }
+
+        const elapsedMs = Date.now() - state.slideState.timeStart
+        const minutes = Math.floor(elapsedMs / state.slideState.acceleration)
+
+        if (state.slideState.stopAt) {
+            if (minutes > state.slideState.stopAt) {
+                return state
+            }
+        }
+
+        asyncActions.tickResultsDisplay()
+        return Object.assign({}, state, {
+            slideState: Object.assign({}, state.slideState, {
+                minutesElapsed: minutes
+            })
+        })
+    },
+
+    UPDATE_LINE_COUNT(state, action) {
+        if (state.slideState.lines === 3) {
+            return state
+        }
+
+        asyncActions.tickLineCount()
+        return Object.assign({}, state, {
+            slideState: Object.assign({}, state.slideState, {
+                lines: (state.slideState.lines || 0) + 1
+            })
         })
     }
 }

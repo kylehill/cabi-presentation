@@ -10,9 +10,12 @@
     font-size: 11vh;
     padding: 0 5vh;
     position: absolute;
+    width: 100%;
+}
+
+.slide:not(.slide-nocenter) {
     top: 50%;
     transform: translateY(-50%);
-    width: 100%;
 }
 
 .slide em {

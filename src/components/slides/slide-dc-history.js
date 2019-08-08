@@ -19,52 +19,68 @@ const Slide = (props) => {
                 </blockquote>
             </Stage>
             <Stage preload={true} on={2}>
-                <img src="1641px-Map_of_the_District_of_Columbia,_1835.jpg" />
+                <img src="1641px-Map_of_the_District_of_Columbia,_1835.jpg"
+                    alt="An early map of the District of Columbia" />
             </Stage>
             <Stage preload={true} on={3}>
-                <img className="scale" src="L_enfant.gif" />
+                <img className="scale" src="L_enfant.gif"
+                    alt="A portrait of Pierre L'Enfant" />
             </Stage>
             <Stage preload={true} on={4}>
-                <img src="LEnfant_plan.jpg" />
+                <img src="LEnfant_plan.jpg"
+                    alt="A hand-drawn map that would eventually become Washington DC" />
             </Stage>
             <Stage preload={true} on={5}>
-                <img src="LEnfant_plan_1.png" />
+                <img src="LEnfant_plan_1.png"
+                    alt="The previous hand-drawn map with diagonal roads highlighted" />
             </Stage>
             <Stage preload={true} on={6}>
-                <img src="stamp.jpg" />
+                <img src="stamp.jpg"
+                    alt="A stamp depicting Benjamin Banneker" />
             </Stage>
             <Stage preload={true} on={7}>
-                <img src="LEnfant_plan_2.png" />
+                <img src="LEnfant_plan_2.png"
+                    alt="The previous hand-drawn map with an additional road highlighted" />
             </Stage>
             <Stage preload={true} on={8}>
-                <img src="fuck_this_weather.png" />
+                <img src="fuck_this_weather.png"
+                    alt="The weather forecast for DC in the summer" />
             </Stage>
             <Stage preload={true} on={9}>
-                <img src="British_Burning_Washington.jpg" />
+                <img src="British_Burning_Washington.jpg"
+                    alt="A painting of the Battle of Washington in the War of 1812" />
             </Stage>
             <Stage preload={true} on={10}>
-                <img src="map_of_dc.png" />
+                <img src="map_of_dc.png"
+                    alt="A screenshot of Google Maps depicting Washington DC" />
             </Stage>
             <Stage preload={true} on={11}>
-                <img src="LEnfant_plan_3.png" />
+                <img src="LEnfant_plan_3.png"
+                    alt="The previous hand-drawn map, with unbuilt canals highlighted" />
             </Stage>
             <Stage preload={true} on={12}>
-                <img src="LEnfant_plan_4.png" />
+                <img src="LEnfant_plan_4.png"
+                    alt="The previous hand-drawn map, with a bunch of train emoji covering a street" />
             </Stage>
             <Stage preload={true} on={13}>
-                <img src="LEnfant_plan_5.png" />
+                <img src="LEnfant_plan_5.png"
+                    alt="The previous hand-drawn map, with the section that's now part of Virginia scribbled out" />
             </Stage>
             <Stage preload={true} on={14}>
-                <img src="LEnfant_plan_6.png" />
+                <img src="LEnfant_plan_6.png"
+                    alt="The previous hand-drawn map, but surrounded by lots of emoji. This one is just a real cheap throwaway sight gag, trust me you're better off without it" />
             </Stage>
             <Stage preload={true} on={15}>
-                <img src="ny-fla.png" />
+                <img src="ny-fla.png"
+                    alt="The previous hand-drawn map, but zoomed in on a particular intersection" />
             </Stage>
             <Stage preload={true} on={16}>
-                <img src="dave_thomas_circle.webp" />
+                <img src="dave_thomas_circle.webp"
+                    alt="A fast food restaurant in the middle of a traffic circle" />
             </Stage>
             <Stage preload={true} on={17}>
-                <img src="toyota_corolla.png" />
+                <img src="toyota_corolla.png"
+                    alt="A screenshot of a news article about a car crashing into the above restaurant" />
             </Stage>
         </div>
     )
