@@ -12,22 +12,19 @@ const slideContent = (stage) => {
 
         case 2:
             return (<div>
-                Hey, I'm <em>Kyle Hill</em>
+                <p>Hey, I'm <em>Kyle Hill</em></p>
+                <p>I'm from <em>Washington, D.C.</em></p>
             </div>)
 
         case 3:
             return (<div>
-                Hey, I'm <em>@kylehill</em>
+                <p>Hey, I'm <em>@kylehill</em></p>
+                <p>I'm from <em>Washington, D.C.</em></p>
             </div>)
 
         case 4:
             return (<div>
-                I'm from <em>Washington, D.C.</em>
-            </div>)
-
-        case 5:
-            return (<div>
-                And I work at <em>so, funny story about that</em>
+                This is a story about <br/><em>terrible ideas</em>
             </div>)
 
         default:
@@ -43,6 +40,6 @@ const TitleCard = (props) => {
     )
 }
 
-TitleCard.stages = 5
+TitleCard.stages = 4
 
 export default TitleCard

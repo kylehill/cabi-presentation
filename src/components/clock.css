@@ -2,7 +2,6 @@
     font-family: 'Bitter', serif;
     position: fixed;
     top: 4vh;
-    right: 4vh;
     font-size: 13vh;
     line-height: 20vh;
     height: 20vh;
@@ -18,4 +17,13 @@
 		-2px 2px 0 #333,
         2px 2px 0 #333;
     font-style: normal;
+    transition: all 500ms;
+}
+
+.clock-container-show {
+    right: 4vh;
+}
+
+.clock-container-hide {
+    right: -40vh;
 }

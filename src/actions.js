@@ -1,6 +1,5 @@
 import asyncActions from "./async-actions"
 import slides from "./components/slides"
-import { async } from "q";
 const SLIDE_COUNT = (slides.length - 1)
 
 export default {
@@ -167,7 +166,7 @@ export default {
             return state
         }
 
-        const elapsed = Math.floor((Date.now() - state.clockStart) / 1000)
+        const elapsed = Math.floor((Date.now() - state.clockStart) / 1050)
 
         asyncActions.tickClock()
         return Object.assign({}, state, {

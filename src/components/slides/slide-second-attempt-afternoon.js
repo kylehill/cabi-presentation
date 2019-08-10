@@ -31,8 +31,7 @@ const Slide = (props) => {
     )
 }
 
-Slide.stages = 2
-Slide.algorithmStage = 2
+Slide.stages = 1
 
 Slide.resultsDisplay = true
 

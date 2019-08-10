@@ -3,12 +3,10 @@ import React from "react"
 import "./clock.css"
 
 const Clock = (props) => {
-    if (props.showClock === false) {
-        return null
-    }
-
+    const className = props.showClock ? "clock-container-show" : "clock-container-hide"
+    
     return (
-        <div className="clock-container">
+        <div className={`clock-container ${className}`}>
             {props.time}
         </div>
     )

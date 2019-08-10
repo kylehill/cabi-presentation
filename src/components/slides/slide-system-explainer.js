@@ -12,13 +12,10 @@ const Slide = (props) => {
                 <br/>
                 <small>(as of, like, an hour ago)</small>
             </Stage>
-            <Stage on={3}>
-                
-            </Stage>
         </div>
     )
 }
 
-Slide.stages = 3
+Slide.stages = 2
 
 export default Slide

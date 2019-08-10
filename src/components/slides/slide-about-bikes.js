@@ -4,36 +4,38 @@ import Stage from "../stage"
 const Slide = (props) => {
     return (
         <div className="slide">
-            <Stage from={1} to={4}>
-                <em>The bikes:</em>
-                <br/>
-                <br/>
-                <ul>
-                    <li>
-                        <Stage from={2} to={4}>
-                            They weigh like 40 pounds
-                        </Stage>
-                    </li>
-                    <li>
-                        <Stage from={3} to={4}>
-                            Who needs to turn, really?
-                        </Stage>
-                    </li>
-                    <li>
-                        <Stage on={4}>
-                            Basically Fred Flintstone's car
-                        </Stage>
-                    </li>
-                </ul>
+            <Stage on={1}>
+                <small>
+                    (the slides don't have to be, tho)
+                </small>
+            </Stage>
+            <Stage on={2}>
+                <small>
+                    (that's 2x the weight that you're used to)
+                </small>
+            </Stage>
+            <Stage on={3}>
+                <small>
+                    (they're somehow held in place by liquid tension)
+                </small>
+            </Stage>
+            <Stage on={4}>
+                <small>
+                    (just a real "tragedy of the commons"-ass bike)
+                </small>
             </Stage>
             <Stage on={5}>
-                <span class="tiny">look, the bikes kind of suck, okay?</span>
+                <small>
+                    (basically it's Fred Flintstone's car)
+                </small>
             </Stage>
             <Stage on={6}>
-                picture of bike gears
+                <img src="IMG_2525.jpg" />
             </Stage>
             <Stage on={7}>
-                <small>[404 usage not found]</small>
+                <small>
+                    [404 usage not found]
+                </small>
             </Stage>
             <Stage preload={true} on={8}>
                 <img src="Tourmalet.png" 
@@ -46,7 +48,9 @@ const Slide = (props) => {
             <Stage from={10}>
                 <em>20,000</em> trips/day
                 <br/>
-                <span class="tiny">[... on a weekday with nice weather, but still!]</span>
+                <span class="tiny">
+                    [... on a weekday with nice weather, but still!]
+                </span>
             </Stage>
         </div>
     )
