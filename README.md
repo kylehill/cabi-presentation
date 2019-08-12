@@ -391,33 +391,21 @@ What if I could outsource my own decision-making here?
 
 **[slide: picture of React app]**
 
-Over a couple days I hacked together a real quick and dirty React app that let me input a station; it considered the combined distance/elevation metric, the current state of point bonuses, and what that scraped data implied that the point bonuses were soon _going to be_, 
-
-**[slide: picture of React app w/ answers]**
-
-and came back with a station pair within 500 meters, predicated on my own logic. 
-
-**[slide: made myself into an API]**
-
-So, uh, yeah, I made myself into an API.
-
-**[slide: this gets terribler]**
+Over a couple days I hacked together a real quick and dirty React app that let me input a station; it considered the combined distance/elevation metric, the current state of point bonuses, and what that scraped data implied that the point bonuses were soon _going to be_, and came back with a nearby station pair, predicated on my own logic. 
 
 Don't worry, this idea gets more terrible. 
 
-I had concerns about conserving my cell battery, and iOS Chrome chews through it fast. 
-
 **[slide: screencap of member portal]**
 
-So instead of using a web app, why not do some Selenium magic and just continually refresh the Capital Bikeshare member portal? The landing page shows details on my most recent ride; whenever that gets updated it's safe to assume that I'm ready for the next.
+I had concerns about conserving my cell battery, and iOS Chrome chews through it fast. 
 
-All it takes is one call to the decision-making API, and a subsequent call to Twilio, and yeah, 
+So instead of using a web app, why not do some PhantomJS magic and just continually refresh the Capital Bikeshare member portal? The landing page shows details on my most recent ride; whenever that gets updated it's safe to assume that I'm ready for the next.
 
 **[slide: screencap of text message]**
 
-I just get a regular text message with stats and directions.
+All it takes is one call to the decision-making API, and a subsequent call to Twilio, and yeah, I just get a regular text message with stats and directions and encouragement.
 
-**[slide: TODO]**
+**[slide: dream weird]**
 
 And _now_ I was ready to give this another shot. Wednesday, July 24th was going to be the day with the nicest weather all summer -- 83 degrees, party cloudy, and low humidity. Record Attempt #2 was going to take place on a day with probably the highest system-wide ridership in months. 
 
