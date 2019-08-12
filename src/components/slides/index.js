@@ -28,10 +28,7 @@ import SecondAttemptS3 from "./slide-second-attempt-afternoon2"
 import SecondAttemptS4 from "./slide-second-attempt-evening"
 
 export default [
-    PointsVisualizer,
-    
     TitleCard,
-    
     SystemExplainer,
     HowToUse,
     AboutBikes,
