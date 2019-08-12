@@ -3,29 +3,29 @@ import Stage from "../stage"
 
 const Slide = (props) => {
     return (
-        <div className="slide">
+        <div className="slide slide-center">
             <Stage on={1}>
                 Logic is <em>attritional</em>
             </Stage>
             <Stage on={2}>
-                screenshot of React app
+                <img src="/carbon-react-app.png" />
             </Stage>
             <Stage on={3}>
-                So I made <em>myself</em> into an API
+                <img src="/member-portal.png" />
             </Stage>
             <Stage on={4}>
-                Obviously this gets more terrible
+                <img src="/api-text.jpg" />
             </Stage>
             <Stage on={5}>
-                screenshot of Cabi member portal
-            </Stage>
-            <Stage on={6}>
-                screenshot of text message
+                <small>
+                    If you dream <em>weird</em> enough,<br/>
+                    you can become your own API
+                </small>
             </Stage>
         </div>
     )
 }
 
-Slide.stages = 7
+Slide.stages = 5
 
 export default Slide

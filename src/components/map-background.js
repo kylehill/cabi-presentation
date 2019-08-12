@@ -55,10 +55,8 @@ const MapBackground = ({ zoom, showGrid }) => {
     return (
         <svg className="map-bg" height={zoom * 1000} width={zoom * 1225}>
             {showGrid ? createGrid(zoom) : null}
-            <polygon fill="rgba(255,165,0,.2)"
+            <polygon fill="rgba(255,165,0,.2)" strokeWidth="1" stroke="#AAA"
                 points={transformPoints(shapeDiamondDC, zoom)} />
-            <polygon fill="rgba(0,0,255,.2)"
-                points={transformPoints(shapeCurrentDC, zoom)} />
         </svg>
     )
 }

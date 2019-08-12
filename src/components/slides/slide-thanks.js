@@ -4,7 +4,8 @@ const Slide = (props) => {
     return (
         <div className="slide">
             <small>
-                <p>️️❤️, <em>@kylehill</em></p>
+                with ️️❤️,<br/>
+                <em>@kylehill</em>
             </small>
         </div>
     )

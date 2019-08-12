@@ -1,7 +1,7 @@
 .slide-container {
     height: 100vh;
     position: relative;
-    background: linear-gradient(#EEEEEE, #F26A8D);
+    background: linear-gradient(#CCFBFE, #ABB8C3);
 }
 
 .slide {
@@ -11,6 +11,7 @@
     padding: 0 5vh;
     position: absolute;
     width: 100%;
+    line-height: 1.4;
 }
 
 .slide:not(.slide-nocenter) {
@@ -24,11 +25,16 @@
     background: #7D1538;
     padding: 0 2vh;
     font-size: 1.1em;
+    box-shadow: -6px 6px #666;
     text-shadow:
 		-2px -2px 0 #333,
 		2px -2px 0 #333,
 		-2px 2px 0 #333,
 		2px 2px 0 #333;
+}
+
+.slide-center {
+    text-align: center;
 }
 
 .slide strong {
@@ -42,8 +48,8 @@
 }
 
 .slide img:not(.station-marker) {
-    max-height: 80vh;
-    max-width: 80vw;
+    max-height: 90vh;
+    max-width: 90vw;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -55,8 +61,16 @@
     border-image: repeating-linear-gradient( -45deg, transparent, transparent 10px, #7D1538 11px, #7D1538 20px) 25;
 }
 
+.slide img.noborder {
+    background: none;
+    border: none;
+    border-radius: 0px;
+    border-image: none;
+    box-shadow: none;
+}
+
 .slide img.scale {
-    transform: scale(1.5) translateX(-33%) translateY(-33%);
+    height: 90vh;
 }
 
 .slide .tiny {
@@ -71,4 +85,10 @@
 
 .slide li + li {
     margin-top: .5em;
+}
+
+.statehood {
+    background: white;
+    color: black;
+    box-shadow: -6px 6px #333;
 }

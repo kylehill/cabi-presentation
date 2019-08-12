@@ -56,7 +56,7 @@ class Map extends React.Component {
     }
 
     createStation(stn) {
-        const hour = this.props.form.timeSlider
+        const hour = (this.props.form.timeSlider % 24)
         const points = hourly[stn.id][hour]
         
         const stationSize = `${Math.round(4 * this.zoom * .75 * (1 + Math.abs(points)))}px`
@@ -78,7 +78,7 @@ class Map extends React.Component {
                 className="map-station" 
                 style={style}
                 onClick={() => { 
-                    this.props.clickStation(stn) 
+                    this.props.clickStation(stn, points) 
                 }} />
         )
     }
@@ -96,7 +96,7 @@ class Map extends React.Component {
                         {"-"}
                     </button>
                 </div>
-                <MapBackground zoom={this.zoom} showGrid={true} />
+                <MapBackground zoom={this.zoom} />
                 <div className="map">
                     {stations.map((stn) => {
                         return this.createStation(stn)
@@ -118,10 +118,10 @@ const mapDispatchToProps = (dispatch) => ({
             type: "CLICK_MAP_ZOOM_IN"
         })
     },
-    clickStation(stn) {
+    clickStation(stn, points) {
         dispatch({
             type: "CLICK_MAP_STATION",
-            station: stn
+            station: {...stn, points}
         })
     }
 })

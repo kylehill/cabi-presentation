@@ -4,7 +4,7 @@
     width: 100vw;
     top: 0;
     left: 0;
-    background: #0D5D56;
+    background: linear-gradient(#CCFBFE, #ABB8C3);
 }
 
 .display-rows {
@@ -114,13 +114,18 @@
 }
 
 .display-panel {
-    border: solid 2px white;
-    background: #333;
+    background: #7D1538;
     text-align: center;
     font-size: 10vh;
     color: white;
     padding: 1vh 0;
     margin-bottom: 4vh;
+    box-shadow: -6px 6px #666;
+    text-shadow:
+		-2px -2px 0 #333,
+		2px -2px 0 #333,
+		-2px 2px 0 #333,
+		2px 2px 0 #333;
 }
 
 .display-legend {

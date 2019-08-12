@@ -5,7 +5,7 @@ import NodeDiagram from "../node-diagram"
 
 const Slide = (props) => {
     return (
-        <div className="slide">
+        <div className="slide slide-center">
             <Stage on={1}>
                 <RoadDiagram />
             </Stage>

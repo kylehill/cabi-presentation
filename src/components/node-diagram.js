@@ -98,7 +98,7 @@ const NodeDiagram = (props) => {
                 {circles.map((c) => {
                     return (<Circle 
                         cx={c.x} cy={c.y} circleClass={c.circleClass}
-                        elevation={c.elevation} />)
+                        elevation={props.withElevation ? c.elevation : null} />)
                 })}
             </svg>
         </div>

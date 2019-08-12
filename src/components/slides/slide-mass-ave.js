@@ -3,7 +3,7 @@ import Stage from "../stage"
 
 const Slide = (props) => {
     return (
-        <div className="slide">
+        <div className="slide slide-center">
             <Stage preload={true} on={1}>
                 <img src="modern-dc-map.png" />
             </Stage>
@@ -11,7 +11,7 @@ const Slide = (props) => {
                 <img src="tall-buildings.png" />
             </Stage>
             <Stage on={3}>
-                <span class="statehood">DC STATEHOOD NOW</span>
+                <div class="statehood">DC STATEHOOD NOW</div>
             </Stage>
             <Stage preload={true} on={4}>
                 <img src="modern-dc-mass-ave.png" />

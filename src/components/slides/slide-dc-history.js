@@ -8,7 +8,7 @@ const Slide = (props) => {
                 A <em>brief</em> historical dicussion
             </Stage>
             <Stage on={2}>
-                <small>Article 1.8.15</small>
+                <small><em>Article 1.8.15</em></small>
                 <br/>
                 <blockquote>
                     "To exercise exclusive Legislation in all Cases whatsoever, 

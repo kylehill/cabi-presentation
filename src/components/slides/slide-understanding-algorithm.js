@@ -5,21 +5,22 @@ const Slide = (props) => {
     return (
         <div className="slide">
             <Stage on={1}>
-                <em>125</em> / <em>6</em> = <em>20.8333333</em>
+                <em>125</em> / <em>6</em> = <br/>
+                <em>20.8333333</em> rides (at least)
             </Stage>
             <Stage on={2}>
-                picture of historical data CSV
+                <img className="noborder" src="/carbon-csv.png" />
             </Stage>
             <Stage on={3}>
-                picture of endpoint response
+            <img className="noborder" src="/carbon-api.png" />
             </Stage>
             <Stage on={4}>
-                picture of empty station
+                <div class="slide-center">
+                    Something <em>sophisticated</em><br/>
+                    is happening here
+                </div>
             </Stage>
             <Stage on={5}>
-                Something <em>sophisticated</em> is happening here
-            </Stage>
-            <Stage on={6}>
                 <ul class="tiny">
                     <li>Rebalancing van visits</li>
                     <li>The day of the week</li>
@@ -29,16 +30,20 @@ const Slide = (props) => {
                     <li>Stations within <em>500 meters</em></li>
                 </ul>
             </Stage>
-            <Stage on={7}>
-                <em>Induction</em>, not deduction
+            <Stage on={6}>
+                <div className="slide-center">
+                    <em>Induction</em>, not deduction
+                </div>
             </Stage>
-            <Stage on={8}>
-                Play <em>against</em> the computer
+            <Stage on={7}>
+                <div className="slide-center">
+                    Play <em>against</em> the computer
+                </div>
             </Stage>
         </div>
     )
 }
 
-Slide.stages = 8
+Slide.stages = 7
 
 export default Slide

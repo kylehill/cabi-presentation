@@ -3,7 +3,7 @@ import Stage from "../stage"
 
 const Slide = (props) => {
     return (
-        <div className="slide">
+        <div className="slide slide-center">
             <Stage on={1}>
                 <small>
                     (the slides don't have to be, tho)
@@ -11,12 +11,12 @@ const Slide = (props) => {
             </Stage>
             <Stage on={2}>
                 <small>
-                    (that's 2x the weight that you're used to)
+                    (2x heavier than usual)
                 </small>
             </Stage>
             <Stage on={3}>
                 <small>
-                    (they're somehow held in place by liquid tension)
+                    (held in place by liquid tension)
                 </small>
             </Stage>
             <Stage on={4}>
@@ -26,7 +26,7 @@ const Slide = (props) => {
             </Stage>
             <Stage on={5}>
                 <small>
-                    (basically it's Fred Flintstone's car)
+                    (basically Fred Flintstone's car)
                 </small>
             </Stage>
             <Stage on={6}>
@@ -38,8 +38,7 @@ const Slide = (props) => {
                 </small>
             </Stage>
             <Stage preload={true} on={8}>
-                <img src="Tourmalet.png" 
-                    alt="A diagram showing elevation change on a mountain" />
+                <img src="tdf.jpg"  />
             </Stage>
             <Stage preload={true} on={9}>
                 <img src="601px-Elmer's_Glue-All_historic_packaging.jpeg" 

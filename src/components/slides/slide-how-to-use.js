@@ -14,7 +14,6 @@ const Slide = (props) => {
     )
 }
 
-Slide.stages = 3
-Stage.playSoundOnStage = 3
+Slide.stages = 2
 
 export default Slide

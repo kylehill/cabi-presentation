@@ -3,7 +3,7 @@ import Stage from "../stage"
 
 const Slide = (props) => {
     return (
-        <div className="slide">
+        <div className="slide slide-center">
             <Stage on={1}>
                 <em>"What are you up to?"</em>
             </Stage>

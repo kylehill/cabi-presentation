@@ -8,11 +8,12 @@ const Slide = (props) => {
                 Target: <em>12.4</em> points/hour
             </Stage>
             <Stage on={2}>
-                Surprise, walking is slow
+                Walking is <em>slower</em><br/>
+                than biking<br/>
+                <span className="tiny">this is only a slide because I kept forgetting that fact</span>
             </Stage>
             <Stage on={3}>
                 Record Attempt #1:<br/>
-                <br/>
                 <em>Monday, July 15th</em>
             </Stage>
         </div>

@@ -14,8 +14,8 @@ const Slide = (props) => {
                         <li>Started after morning rush ended</li>
                         <li>Didn't bring an extra phone battery</li>
                         <li>Was at bar until 12:30 the night prior</li>
-                        <li>I mean, who needs to eat lunch, really</li>
-                        <li>Holy shit, use sunblock my dude</li>
+                        <li>Skipped lunch because of reasons?</li>
+                        <li>What do you have against sunblock, Kylf</li>
                     </ul>
                 </small>
             </Stage>

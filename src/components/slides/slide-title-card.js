@@ -7,7 +7,7 @@ const slideContent = (stage) => {
                 <strong><em>Tour de Bikeshare</em></strong>
                 <br />
                 <br />
-                Setting World Records with JavaScript
+                Setting World Records<br/>with JavaScript
             </div>)
 
         case 2:
