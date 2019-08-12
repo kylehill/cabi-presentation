@@ -25,7 +25,7 @@ const Slide = (props) => {
                 <NodeDiagram withElevation={true} />
             </Stage>
             <Stage on={7} preload={true}>
-                <img src="/carbon-effort-metric.png" />
+                <img className="noborder" src="/carbon-effort-metric.png" />
             </Stage>
             <Stage on={8}>
                 <em>"just"</em>

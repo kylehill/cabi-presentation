@@ -8,7 +8,7 @@ const Slide = (props) => {
                 Logic is <em>attritional</em>
             </Stage>
             <Stage on={2}>
-                <img src="/carbon-react-app.png" />
+                <img className="noborder" src="/carbon-react-app.png" />
             </Stage>
             <Stage on={3}>
                 <img src="/member-portal.png" />
