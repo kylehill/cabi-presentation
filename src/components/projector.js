@@ -21,6 +21,11 @@ const mapDispatchToProps = (dispatch) => {
         },
         toggleClock() {
             dispatch({ type: "TOGGLE_CLOCK" })
+        },
+
+        playChime() {
+            const chime = document.querySelector("#chime")
+            chime && chime.play()
         }
     }
 }
@@ -57,8 +62,12 @@ class Projector extends React.Component {
                 this.props.keyDown()
                 break
 
-            case 67:
+            case 67: // C
                 this.props.toggleClock()
+                break
+
+            case 83: // S
+                this.props.playChime()
                 break
 
             default:

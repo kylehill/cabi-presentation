@@ -1,0 +1,42 @@
+.node-container {
+    margin: 0px auto;
+    height: 408px;
+    width: 608px;
+    border: solid 4px black;
+}
+
+.elevation {
+    font-size: 18px;
+    font-family: monospace;
+    position: relative;
+    bottom: 3px;
+}
+
+.intersection {
+    stroke-width: 2px;
+    stroke: #333;
+    fill: #CCFBFE;
+}
+
+.station {
+    stroke-width: 2px;
+    stroke: #333;
+    fill: #18AB1D;
+}
+
+.station + .elevation {
+    fill: white;
+}
+
+.path {
+    stroke-width: 3px;
+    fill: none;
+}
+
+.path-left, .path-up {
+    stroke: blue;
+}
+
+.path-right, .path-down {
+    stroke: red;
+}

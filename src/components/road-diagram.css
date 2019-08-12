@@ -1,0 +1,76 @@
+.diagram-box {
+    height: 408px;
+    width: 608px;
+    position: relative;
+    margin: 0px auto;
+    border: solid 4px black;
+}
+
+.diagram-show-streets .crow-distance {
+    display: block;
+}
+
+.diagram-hide-streets .path-distance {
+    display: block;
+}
+
+.diagram-hide-streets .diagram-container .street {
+    stroke: #DDD;
+}
+.diagram-hide-streets .diagram-container .outline {
+    stroke: #BBB;
+}
+
+.diagram-container {
+    background: #DDD;
+}
+
+.diagram-container .street {
+    stroke: #FFF;
+}
+
+.diagram-container .street.bikelane {
+    stroke: #CCFBFE;
+}
+
+.diagram-container .outline {
+    stroke: #AAA;
+}
+
+.station-marker {
+    position: absolute;
+    height: 50px;
+}
+
+.station-marker-1 {
+    top: 60px;
+    left: 240px;
+}
+
+.station-marker-2 {
+    top: 120px;
+    left: 100px;
+}
+
+.station-marker-3 {
+    top: 250px;
+    left: 330px;
+}
+
+.station-marker-4 {
+    top: 60px;
+    left: 440px;
+}
+
+.crow-distance {
+    stroke: red;
+    stroke-width: 5px;
+    display: none;
+}
+
+.path-distance {
+    stroke: red;
+    stroke-width: 5px;
+    fill: none;
+    display: none;
+}

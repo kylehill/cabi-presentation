@@ -11,18 +11,15 @@ const Slide = (props) => {
                 screenshot of React app
             </Stage>
             <Stage on={3}>
-                screenshot of React app, with recommendation
-            </Stage>
-            <Stage on={4}>
                 So I made <em>myself</em> into an API
             </Stage>
-            <Stage on={5}>
+            <Stage on={4}>
                 Obviously this gets more terrible
             </Stage>
-            <Stage on={6}>
+            <Stage on={5}>
                 screenshot of Cabi member portal
             </Stage>
-            <Stage on={7}>
+            <Stage on={6}>
                 screenshot of text message
             </Stage>
         </div>

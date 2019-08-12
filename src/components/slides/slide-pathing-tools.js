@@ -1,29 +1,31 @@
 import React from "react"
 import Stage from "../stage"
+import RoadDiagram from "../road-diagram"
+import NodeDiagram from "../node-diagram"
 
 const Slide = (props) => {
     return (
         <div className="slide">
             <Stage on={1}>
-                picture of crow flies distance measurement
+                <RoadDiagram />
             </Stage>
             <Stage preload={true} on={2}>
                 <img src="bike-into-water.gif" />
             </Stage>
             <Stage on={3}>
-                picture of reduced street map of DC
+                <RoadDiagram onlyBikeLanes={true} />
             </Stage>
             <Stage on={4}>
-                picture of nodes in directed graph
+                <NodeDiagram />
             </Stage>
             <Stage preload={true} on={5}>
                 <img src="open-elevation.png" />
             </Stage>
             <Stage on={6}>
-                picture of nodes in directed graph with elevations
+                <NodeDiagram withElevation={true} />
             </Stage>
-            <Stage on={7}>
-                picture of nodes in directed graph with combined metric
+            <Stage on={7} preload={true}>
+                <img src="/carbon-effort-metric.png" />
             </Stage>
             <Stage on={8}>
                 <em>"just"</em>
